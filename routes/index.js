@@ -12,6 +12,16 @@ router.get('/', function(req, res, next) {
 });
 
 
+/* GET Find Post. */
+
+router.get('/alluserposts' , async function (req , res , next){
+  let user = await userModel
+  .findById({_id:'655353176185353301461436'})
+  .populate('posts')
+  res.send(user)
+})
+
+
 /* GET Create User. */
 
 
@@ -27,6 +37,8 @@ router.get('/createuser', async function(req, res, next) {
   res.send(createduser)
 });
 
+
+/* GET Create Posts. */
 
 
 router.get('/createpost', async function(req, res, next) {
