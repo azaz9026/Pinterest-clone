@@ -10,24 +10,18 @@ body {
 .container {
   background-color: white;
   width: 480px;
-  height: 650px;
+  min-height: 650px;
   position: absolute;
   margin: auto;
-  top: 20%;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
   border-radius: 10px;
   box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
 }
 .content {
   width: 56%;
-  position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   text-align: center;
 }
  
@@ -37,11 +31,11 @@ body {
   top: 20px;
 }
 .header {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 10px;
-  line-height: 46px;
+  line-height: 1;
 }
 .detail {
   width: 100%;
@@ -141,13 +135,15 @@ hr {
 }
 .upbtn{
   position: relative;
+  text-decoration: none;
+  color: #000;
   top: 50px;
   left: 140px;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   width: 126px;
-  padding: 11px 0px;
+  padding: 11px 20px;
   background-color: rgb(241, 236, 236);
   border-radius: 20px;
 }

@@ -11,14 +11,18 @@
     <div class="content">
       <!--pinterest logo-->
       <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
-      <p class="header">Log in to see more</p>
+      <p class="header"> Make Account to <br> see more</p>
 
-      <input type="email" placeholder="Email" class="detail" /><br />
-      <input type="password" placeholder="Password" class="detail" />
+      <form action="/register" method="post"> 
+        <input type="email" name="email" placeholder="Email" class="detail" /><br />
+        <input type="text" name="username" placeholder="Username" class="detail" /><br />
+        <input type="text" name="fullname" placeholder="Full Nmae" class="detail" /><br />
+        <input type="password" name="password" placeholder="Password" class="detail" />
+        <input type="submit"  class='btn int' value="Register Account" />
+      </form>
+      
+      <a href="/forgot">Forgot your password?</a>
 
-      <h4>Forgot your password?</h4>
-
-      <button class="btn int">Log in</button>
       <p class="or">OR</p>
       <button class="btn fbk">
         <i
@@ -45,7 +49,8 @@
       </footer>
     </div>
   </div>
-  <div class="upbtn">Sign up</div>
+
+  <a class="upbtn" href="">Sign up</a>
 
 </body>
 </html>
