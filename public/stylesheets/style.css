@@ -10,7 +10,6 @@ body {
 .container {
   background-color: white;
   width: 480px;
-  min-height: 650px;
   position: absolute;
   margin: auto;
   transform: translate(-50%,-50%);
