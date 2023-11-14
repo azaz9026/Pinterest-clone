@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongod://127.0.0.1:27017/pinterest')
+mongoose.connect('mongodb://127.0.0.1:27017/pinterest')
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -14,7 +14,10 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
 
-  posts: [],
+  posts: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Post',
+  }],
 
   dp: {
     type: String, // You might want to store the image URL or file path
