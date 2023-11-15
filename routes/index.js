@@ -26,7 +26,7 @@ router.get('/feed', function(req, res, next) {
 /** Profile router */
 
 router.get('/profile', isLoggedIn , (req , res)=>{
-  res.render('welcome to profile')
+  res.render('profile')
 })
 
 /* GET register page. */
