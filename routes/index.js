@@ -25,8 +25,11 @@ router.get('/feed', function(req, res, next) {
 
 /** Profile router */
 
-router.get('/profile', isLoggedIn , (req , res)=>{
-  res.render('profile')
+router.get('/profile', isLoggedIn , async (req , res)=>{
+  const user = await userModel.findOne({
+    username: req.session.passport.user
+  })
+  res.render('profile' , {user})
 })
 
 /* GET register page. */
