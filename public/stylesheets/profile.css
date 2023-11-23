@@ -37,6 +37,13 @@ body {
     font-size: 24px;
     margin: 0;
   }
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+  }
   
   .username {
     font-size: 18px;
